@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling Forms</title>
+		<style>
+			* {
+				font-family: arial, courier,helvetica;
+				color:lightslategray;}
+			input {
+				border-bottom: 1px dotted dimgray;
+				border-top: none;
+				border-right: none;
+				border-left: none;
+				padding: 5px;
+				width: 280px;
+				margin-bottom: 15px;}
+			input:focus {
+				border: 1px dotted gray;
+                outline: none;
+				}
+			input#submit {
+				color: lightgray;
+                font-size: 1em;
+				background-color: #665544;
+				border: none;
+				border-radius: 8px;
+				width: 85px;}
+			input#submit:hover {
+				color: darkcyan;
+				background-color: #c2bfbf;}
+			fieldset {
+				width: 350px;
+				border: 1px solid lightgray;
+				border-radius: 12px;
+				padding: 20px;
+                text-align: right;
+				}
+			legend {
+				background-color: #f1efef;
+				border: 1px dotted #c7c7c7;
+				border-radius: 10px;
+				padding: 5px 15px;
+				text-align: center;
+				text-transform: uppercase;}
+		</style>
+	</head>
+	<body>
+
+        <br>
+
+		<form>
+			<fieldset>
+				<legend>Join Our Newsletter</legend>
+                <label for="name">Name: </label><input type="text" id="name" />
+				<label for="email">Email: </label><input type="text" id="email" />
+				<input type="submit" value="Subscribe" id="submit" />
+			</fieldset>
+		</form>
+	</body>
+</html>
